@@ -9,6 +9,73 @@
          
         <Color x:Key="KolorZielony1">#FF82B757</Color>
         <Color x:Key="KolorKremowy1">#FFFFFFEE</Color>
-        <SolidColorBrush x:Key="Tło1" Color="{DynamicResource KolorKremowy1}"/>
+        
+        <SolidColorBrush
+            x:Key="Tło1"
+            Color="{DynamicResource KolorKremowy1}"
+            />
+        <LinearGradientBrush
+            x:Key="Tło2"
+            EndPoint="0.75,0.75"
+            StartPoint="0,0"
+            >
+            <GradientStop Color="{DynamicResource KolorKremowy1}" Offset="1"/>
+            <GradientStop Color="{DynamicResource KolorZielony1}"/>
+        </LinearGradientBrush>
+        
+        <Style
+            x:Key="Border0"
+            TargetType="{x:Type Border}"
+            >
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="BorderThickness" Value="5"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style
+            x:Key="Border1"
+            BasedOn="{StaticResource Border0}"
+            TargetType="{x:Type Border}"
+            >
+            <Setter Property="BorderBrush" Value="#707"/>
+            <Setter Property="Background" Value="#070"/>
+        </Style>
+        <Style
+            x:Key="Border2"
+            BasedOn="{StaticResource Border0}"
+            TargetType="{x:Type Border}"
+            >
+            <Setter Property="BorderBrush" Value="#07F"/>
+            <Setter Property="Background" Value="#F00"/>
+        </Style>
+        
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="Background" Value="#FFEE9999"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Label}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style
+            TargetType="{x:Type Label}"
+            x:Key="Spec"
+            BasedOn="{StaticResource {x:Type Label}}"
+            >
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Background" Value="#FAA"/>
+        </Style>
     </Application.Resources>
 </Application>

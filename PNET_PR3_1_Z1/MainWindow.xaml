@@ -12,9 +12,7 @@
     Height="600"
     Width="500"
     >
-    <Grid
-        Background="{StaticResource Tło1}"
-        >
+    <Grid Background="{DynamicResource Tło2}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition/>
@@ -27,12 +25,8 @@
             <RowDefinition Height="50"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        
-        <Label
-            Background="#FFC7ACAC"
-            HorizontalContentAlignment="Center"
-            VerticalContentAlignment="Center"
-            >
+
+        <Label Style="{DynamicResource Spec}">
             Stack
         </Label>
         <ScrollViewer
@@ -41,110 +35,31 @@
             VerticalScrollBarVisibility="Hidden"
             >
             <StackPanel>
-                <Border
-                    Background="#070"
-                    BorderBrush="#707"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#F00"
-                    BorderBrush="#000"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#070"
-                    BorderBrush="#707"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#F00"
-                    BorderBrush="#000"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#070"
-                    BorderBrush="#707"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#F00"
-                    BorderBrush="#000"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#070"
-                    BorderBrush="#707"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#F00"
-                    BorderBrush="#000"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#070"
-                    BorderBrush="#707"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#F00"
-                    BorderBrush="#000"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#070"
-                    BorderBrush="#707"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#F00"
-                    BorderBrush="#000"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#070"
-                    BorderBrush="#707"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#F00"
-                    BorderBrush="#000"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#070"
-                    BorderBrush="#707"
-                    BorderThickness="3"
-                    Height="50"
-                    />
-                <Border
-                    Background="#F00"
-                    BorderBrush="#000"
-                    BorderThickness="3"
-                    Height="50"
-                    />
+                <Border Style="{DynamicResource Border1}"/>
+                <Border Style="{DynamicResource Border2}"/>
+                <Border Style="{DynamicResource Border1}"/>
+                <Border Style="{DynamicResource Border2}"/>
+                <Border Style="{DynamicResource Border1}"/>
+                <Border Style="{DynamicResource Border2}"/>
+                <Border Style="{DynamicResource Border1}"/>
+                <Border Style="{DynamicResource Border2}"/>
+                <Border Style="{DynamicResource Border1}"/>
+                <Border Style="{DynamicResource Border2}"/>
+                <Border Style="{DynamicResource Border1}"/>
+                <Border Style="{DynamicResource Border2}"/>
+                <Border Style="{DynamicResource Border1}"/>
+                <Border Style="{DynamicResource Border2}"/>
+                <Border Style="{DynamicResource Border1}"/>
+                <Border Style="{DynamicResource Border2}"/>
+                <Border Style="{DynamicResource Border1}"/>
+                <Border Style="{DynamicResource Border2}"/>
+                <Border Style="{DynamicResource Border1}"/>
+                <Border Style="{DynamicResource Border2}"/>
             </StackPanel>
         </ScrollViewer>
 
         <Label
             Grid.Column="1"
-            Background="#FFC7ACAC"
-            HorizontalContentAlignment="Center"
-            VerticalContentAlignment="Center"
             >
             Wrap poziomy
         </Label>
@@ -207,12 +122,9 @@
                 6
             </Label>
         </WrapPanel>
-        
+
         <Label
             Grid.Column="2"
-            Background="#FFC7ACAC"
-            HorizontalContentAlignment="Center"
-            VerticalContentAlignment="Center"
             >
             Wrap pionowy
         </Label>
@@ -281,9 +193,6 @@
         <Label
             Grid.Column="1"
             Grid.Row="3"
-            Background="#FFC7ACAC"
-            HorizontalContentAlignment="Center"
-            VerticalContentAlignment="Center"
             >
             Blok tekstowy
         </Label>
@@ -297,13 +206,10 @@
             Blok.
             Tekstowy.
         </TextBlock>
-        
+
         <Label
             Grid.Column="2"
             Grid.Row="3"
-            Background="#FFC7ACAC"
-            HorizontalContentAlignment="Center"
-            VerticalContentAlignment="Center"
             >
             Pole tekstowe
         </Label>
