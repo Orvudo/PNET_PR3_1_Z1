@@ -1,9 +1,14 @@
-﻿<Application x:Class="PNET_PR3_1_Z1.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:PNET_PR3_1_Z1"
-             StartupUri="MainWindow.xaml">
+﻿<Application
+    x:Class="PNET_PR3_1_Z1.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:PNET_PR3_1_Z1"
+    StartupUri="MainWindow.xaml"
+    >
     <Application.Resources>
          
+        <Color x:Key="KolorZielony1">#FF82B757</Color>
+        <Color x:Key="KolorKremowy1">#FFFFFFEE</Color>
+        <SolidColorBrush x:Key="Tło1" Color="{DynamicResource KolorKremowy1}"/>
     </Application.Resources>
 </Application>

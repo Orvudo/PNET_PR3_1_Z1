@@ -7,11 +7,31 @@
     xmlns:local="clr-namespace:PNET_PR3_1_Z1"
     mc:Ignorable="d"
     
-    Title="MainWindow"
-    Height="450"
-    Width="800"
+    Title="Podstawy"
+    Height="600"
+    Width="500"
     >
-    <Grid>
+    <Grid
+        Background="{StaticResource Tło1}"
+        >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Label
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Background="#FFC7ACAC"
+            >
+            Etykieta do czegoś
+        </Label>
+
 
     </Grid>
 </Window>
