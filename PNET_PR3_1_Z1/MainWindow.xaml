@@ -60,6 +60,8 @@
 
         <Label
             Grid.Column="1"
+            BorderThickness="1"
+            BorderBrush="#000"
             >
             Wrap poziomy
         </Label>
