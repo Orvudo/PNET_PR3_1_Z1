@@ -24,6 +24,7 @@
             <RowDefinition Height="50"/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition Height="50"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         
@@ -36,7 +37,7 @@
         </Label>
         <ScrollViewer
             Grid.Row="1"
-            Grid.RowSpan="3"
+            Grid.RowSpan="4"
             VerticalScrollBarVisibility="Hidden"
             >
             <StackPanel>
@@ -276,5 +277,42 @@
                 6
             </Label>
         </WrapPanel>
+
+        <Label
+            Grid.Column="1"
+            Grid.Row="3"
+            Background="#FFC7ACAC"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            >
+            Blok tekstowy
+        </Label>
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="4"
+            TextWrapping="Wrap"
+            >
+            Blok tekstowy blok tekstowy. Tekstowy blok.
+            
+            Blok.
+            Tekstowy.
+        </TextBlock>
+        
+        <Label
+            Grid.Column="2"
+            Grid.Row="3"
+            Background="#FFC7ACAC"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            >
+            Pole tekstowe
+        </Label>
+        <TextBox
+            Grid.Column="2"
+            Grid.Row="4"
+            TextWrapping="Wrap"
+            >
+            Tekst edytowalny
+        </TextBox>
     </Grid>
 </Window>
